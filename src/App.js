@@ -35,22 +35,6 @@ const App = () => {
     </BrowserRouter>
   );
   
-  // return (
-  //   <BrowserRouter>
-  //     <Layout>
-  //       <Routes>
-  //         <Route path="/" element={ <HomePage/> } />
-  //         <Route path="/contact" element={ <ContactPage/> } />
-  //         <Route path="/book" element={ <BookPage/> } />
-  //         <Route path="/cancellation" element={ <CancellationPolicy/> } />
-  //         <Route path="/portfolio" element={ <PortfolioPage/> } />
-  //         <Route path="/promotions" element={ <PromotionsPage/> } />
-  //         <Route path="/services" element={ <ServicesPage/> } />
-  //         <Route path="/store" element={ <StorePage/> } />
-  //       </Routes>
-  //     </Layout> 
-  //   </BrowserRouter>
-  // );
 }
 
 export default App;

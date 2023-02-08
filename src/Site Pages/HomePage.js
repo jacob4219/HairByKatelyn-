@@ -1,75 +1,41 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Autoplay, Pagination, Navigation } from "swiper";
 
-const HomePage = () => {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [images, setImages] = useState([
-    "https://via.placeholder.com/1000x400/000000/ffffff?text=Slide+1",
-    "https://via.placeholder.com/1000x400/000000/ffffff?text=Slide+2",
-    "https://via.placeholder.com/1000x400/000000/ffffff?text=Slide+3",
-    "https://via.placeholder.com/1000x400/000000/ffffff?text=Slide+4",
-  ]);
-
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImage((currentImage + 1) % images.length);
-    }, 10000);
-
-    return () => clearInterval(intervalId);
-  }, [currentImage, images]);
-
+function HomePage() {
   return (
-    <div className="fade-in">
-      <div className="slideshow">
-        <div
-          className="slideshow-image"
-          style={{ backgroundImage: `url(${images[currentImage]})` }}
-        >
-          <div className="slideshow-text">
-            <p>Slide {currentImage + 1}</p>
-          </div>
-        </div>
-      </div>
-      <div className="static-images">
-        <div className="static-image">
-          <div
-            className="static-image-bg"
-            style={{ backgroundImage: `url(${images[0]})` }}
-          />
-          <div className="static-image-text">
-            <p>Image 1</p>
-          </div>
-        </div>
-        <div className="static-image">
-          <div
-            className="static-image-bg"
-            style={{ backgroundImage: `url(${images[1]})` }}
-          />
-          <div className="static-image-text">
-            <p>Image 2</p>
-          </div>
-        </div>
-        <div className="static-image">
-          <div
-            className="static-image-bg"
-            style={{ backgroundImage: `url(${images[2]})` }}
-          />
-          <div className="static-image-text">
-            <p>Image 3</p>
-          </div>
-        </div>
-        <div className="static-image">
-          <div
-            className="static-image-bg"
-            style={{ backgroundImage: `url(${images[3]})` }}
-          />
-          <div className="static-image-text">
-            <p>Image 4</p>
-          </div>
-        </div>
-      </div>
+    <div className="home-page">
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 9000,
+          disableOnInteraction: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+      >
+        <SwiperSlide>
+        <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/292675124_451200183679957_5757115862384107057_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7U_8PjMEScIAX_JVhXE&_nc_ht=scontent-ord5-2.xx&oh=00_AfB_-nlt1lMva9A3o0nm_HjYHQOTPcaBsIku_v5vyPfjNQ&oe=63E830AE" alt="Slide 3" />
+          Slide 1</SwiperSlide>
+        <SwiperSlide>
+        <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/298710816_470314548435187_6262191100873366381_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=730e14&_nc_ohc=OMF2eRg_PwkAX8ayMMR&_nc_ht=scontent-ord5-2.xx&oh=00_AfDCr0Piu---hnDl4kWWKo0y6WXK7OrgGEyU8rOTjABJOw&oe=63E7EBB7" alt="Slide 3" />
+          Slide 2</SwiperSlide>
+  <SwiperSlide>
+    <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/327462593_878067920134276_7845143632512178910_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=3EWVQMTltIMAX-cdpK8&tn=RGR2Um_kH-gcyI2K&_nc_ht=scontent-ord5-2.xx&oh=00_AfDR07xeJF1Ubz9DaT3-wPdc8Cm5mTcSOTPhZz9Vjn0wSg&oe=63E8C4F4" alt="Slide 3" />
+  One Shot!</SwiperSlide>
+      </Swiper>
+
     </div>
   );
-};
+}
 
 export default HomePage;
 

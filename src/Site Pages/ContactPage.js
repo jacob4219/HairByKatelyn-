@@ -10,8 +10,8 @@ const ContactPage = () => {
         Valparaiso, IN 46385, US
       </p>
       <p className="contact-info">Phone: 219-508-4730</p>
-      
-      <table className="business-hours"><p>Business Hours:</p>
+      <p className="contact-info1">Business Hours:</p>
+      <table className="business-hours">
         <tbody>
           <tr>
             <td>Tuesday</td>

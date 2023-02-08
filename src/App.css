@@ -92,32 +92,22 @@ footer p {
 }
 
 nav {
-  /* display: flex; */
-  justify-content: center; /* This line will center the elements inside the nav bar */
+  display: flex;
+  justify-content: center; 
   align-items: center;
   width: 100%;
-  background-color: #f2f2f2;
-  padding: 1em;
+  padding: 2em;
   margin-bottom: 0.5em;
+  
   }
   
-  nav ul {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: center; /* This line will center the elements inside the ul tag */
-  }
-
-/* nav li {
-  margin: 0 2em;
-} */
 
 nav a {
   display: flex;
   /* justify-content:center; */
-  padding-left: .5em;
-  padding-right:.5em;
+  padding: .25em;
+  padding-left: 1em;
+  padding-right:1em;
   color: #333;
   text-decoration: none;
   align-items: center;
@@ -138,7 +128,7 @@ background-color: #FFFFFF;
 box-sizing: border-box;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
 .site-content {
 width: 50%;
 }
@@ -239,14 +229,41 @@ li {
   line-height: 1.5;
   margin-bottom: 0.20em;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 100%;
+  background-color: #f2f2f2f5;
+  padding: 1em;
+  padding-left: 2em;
+}
+
+.cancellation-policy-p {
+  font-size: 1em;
+  line-height: 1.5;
+  margin-bottom: 0.20em;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #f2f2f2f5;
   padding: 1em;
+  padding-left: 2em;
 }
 
 .contact-info {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f2f2f5;
+  padding: 1em;
+  margin: 0.20em 0;
+}
+
+.contact-info1 {
   font-size: 1em;
   display: flex;
   justify-content: center;
@@ -298,38 +315,29 @@ li {
     opacity: 1;
   }
 }
-
-.static-images {
+.home-page {
+  margin-top: 3em;
+}
+.swiper-slide {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.static-image {
-  width: 20em;
-  height: 20em;
-  margin: 1em;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
   justify-content: center;
-  align-items: flex-end;
-  position: relative;
+  padding-top: 1em;
+  padding-bottom: .5em;
+  height: auto;
 }
 
-.static-image-text {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 0.5em;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
+.swiper {
+  background-color: #33333397;
+
 }
 
-
+.home-page .swiper-slide img {
+  width: 40%;
+  display: flex;
+  margin: 0 auto;
+}
 
 
 /* p {
