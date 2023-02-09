@@ -1,11 +1,25 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 const SiteMenu = () => {
-    const [expanded, setExpanded] = useState(false);
-  
-    return (
+  const [expanded, setExpanded] = useState(false);
+
+  return (
+    <>
+      <div className="social-icons-mobile">
+        <a href="https://www.facebook.com/katelynbirkyhairstylist" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebook} />
+        </a>
+        <a href="https://www.instagram.com/katelynbirkyhairstylist/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} />
+        </a>
+        <a href="https://www.tiktok.com/@hairbykatelynbirky" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTiktok} />
+        </a>
+      </div>
       <Navbar expanded={expanded} collapseOnSelect expand="xl" bg="light" variant="light">
         <Container>
           <Navbar.Brand><Link to="/" onClick={() => setExpanded(false)}>Hair By Katelyn</Link></Navbar.Brand>
@@ -20,15 +34,22 @@ const SiteMenu = () => {
               <Link to="/store" onClick={() => setExpanded(false)}>Store</Link>
               <Link to="/cancellation" onClick={() => setExpanded(false)}>Cancellation Policy</Link>
             </Nav>
+            <div className="social-icons-desktop">
+              <a href="https://www.facebook.com/katelynbirkyhairstylist" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faFacebook} />
+              </a>
+              <a href="https://www.instagram.com/katelynbirkyhairstylist/" target="_blank" rel="noopener noreferrer">
+                <FontAwesomeIcon icon={faInstagram} />
+              </a>
+              <a href="https://www.tiktok.com/@hairbykatelynbirky" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTiktok} />
+        </a>
+            </div>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    );
-  }
-  
+    </>
+  );
+}
 
 export default SiteMenu;
-
-
-
-
