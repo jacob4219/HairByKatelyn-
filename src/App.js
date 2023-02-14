@@ -10,7 +10,7 @@ import PortfolioPage from '/Users/Jacob/code/Katelyn/katelyn-hairstylist/src/Sit
 import PromotionsPage from '/Users/Jacob/code/Katelyn/katelyn-hairstylist/src/Site Pages/PromotionsPage.js';
 import ServicesPage from '/Users/Jacob/code/Katelyn/katelyn-hairstylist/src/Site Pages/ServicesPage.js';
 import StorePage from '/Users/Jacob/code/Katelyn/katelyn-hairstylist/src/Site Pages/StorePage.js';
-// import from '';
+import SplashPage from '/Users/Jacob/code/Katelyn/katelyn-hairstylist/src/Site Pages/SplashPage.js';
 // import from '';
 
 import './App.css';
@@ -21,7 +21,8 @@ const App = () => {
       <Layout>
         <div className="container">
           <Routes>
-            <Route path="/" element={ <HomePage/> } />
+            <Route path="/home" element={ <HomePage/> } />
+            <Route path="/" element={ <SplashPage/> } />
             <Route path="/contact" element={ <ContactPage/> } />
             <Route path="/book" element={ <BookPage/> } />
             <Route path="/cancellation" element={ <CancellationPolicy/> } />
