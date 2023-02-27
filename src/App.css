@@ -684,8 +684,8 @@ nav {
   .portfolio-menu-item {
     display: flex;
     flex-direction: column;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     color: #333;
     text-decoration: none;
     align-items: center;
@@ -703,8 +703,10 @@ nav {
     display: flex;
     max-width: 25%;
     justify-content: center;
-    padding-right: .5em;
-    padding-left: .5em;
+    padding-right: .65em;
+    padding-left: .65em;
+    font-weight: bold;
+    font-size: .75em;
   }
   .portfolio-menu-list {
     padding-right: 1em;
@@ -800,6 +802,7 @@ th {
   line-height: 1em;
   padding-left: 1em;
   padding-right: 1em;
+  padding-top: 3em;
 }
 
 .link-text p{
