@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/HairByKatelyn-/static/css/main.820244ea.css",
-    "main.js": "/HairByKatelyn-/static/js/main.5e549033.js",
+    "main.js": "/HairByKatelyn-/static/js/main.a889655a.js",
     "static/js/787.340fee42.chunk.js": "/HairByKatelyn-/static/js/787.340fee42.chunk.js",
     "static/media/293580694_451200187013290__n.jpeg": "/HairByKatelyn-/static/media/293580694_451200187013290_6529234800391070173_n.b245fa6e4d4df53b8bdd.jpeg",
     "index.html": "/HairByKatelyn-/index.html",
     "main.820244ea.css.map": "/HairByKatelyn-/static/css/main.820244ea.css.map",
-    "main.5e549033.js.map": "/HairByKatelyn-/static/js/main.5e549033.js.map",
+    "main.a889655a.js.map": "/HairByKatelyn-/static/js/main.a889655a.js.map",
     "787.340fee42.chunk.js.map": "/HairByKatelyn-/static/js/787.340fee42.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.820244ea.css",
-    "static/js/main.5e549033.js"
+    "static/js/main.a889655a.js"
   ]
 }

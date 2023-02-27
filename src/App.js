@@ -29,7 +29,7 @@ import './App.css';
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/HairByKatelyn-">
       <Layout>
         <div className="container">
           <Routes>
