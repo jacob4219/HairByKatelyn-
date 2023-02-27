@@ -41,7 +41,7 @@ function HomePage() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="image-container">
-              <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/327462593_878067920134276_7845143632512178910_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=3EWVQMTltIMAX-cdpK8&tn=RGR2Um_kH-gcyI2K&_nc_ht=scontent-ord5-2.xx&oh=00_AfDR07xeJF1Ubz9DaT3-wPdc8Cm5mTcSOTPhZz9Vjn0wSg&oe=63E8C4F4" alt="Slide 2" />
+              <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/327462593_878067920134276_7845143632512178910_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=OkRSLY3cgdYAX8wSaeA&_nc_ht=scontent-ord5-2.xx&oh=00_AfDrmOdDrnkdSgWrAJPH0Rqj96sLlgl1rYaMxcD2RwntJw&oe=64027A34" alt="Slide 2" />
               <div class="text-overlay">
                 <h1 className="main-overlay-text">Discover Your Perfect Color</h1>
               </div>
@@ -49,7 +49,7 @@ function HomePage() {
           </SwiperSlide>
           <SwiperSlide>
             <div class="image-container">
-              <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/292675124_451200183679957_5757115862384107057_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=7U_8PjMEScIAX_JVhXE&_nc_ht=scontent-ord5-2.xx&oh=00_AfB_-nlt1lMva9A3o0nm_HjYHQOTPcaBsIku_v5vyPfjNQ&oe=63E830AE" alt="Slide 3" />
+              <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/292675124_451200183679957_5757115862384107057_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=lGfbJFZEXM0AX-WlKUM&tn=qZC8PrD-8OvLrnOu&_nc_ht=scontent-ord5-2.xx&oh=00_AfB-N6cTbvgf8zOEgchWSPdhPUJieu44T_j6xN25L57uZg&oe=6401E5EE" alt="Slide 3" />
               <div class="text-overlay">
                 <h1 className="main-overlay-text">Wedding Dreams Come True</h1>
               </div>
@@ -60,7 +60,7 @@ function HomePage() {
         <div className="static-images">
           <a href="/services">
             <div class="image-container-static">
-            <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/312951748_535731411893500_7092277791842944265_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=rdkkyRkkdoEAX_tpGYU&tn=RGR2Um_kH-gcyI2K&_nc_ht=scontent-ord5-2.xx&oh=00_AfCe_Whk8uWa1EA0jia8kRRHH00ErTx_R2Iz5Yyuv4qpYw&oe=63EB3CF4" alt="1" />
+            <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/312951748_535731411893500_7092277791842944265_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=iPoz_NjgtpkAX83GK0H&_nc_ht=scontent-ord5-2.xx&oh=00_AfDIiFSDdCOY1JsVxNXJ798_CiYuaJKV3I7LEt2oxBcajw&oe=6400FDB4" alt="1" />
               <div class="text-overlay-static">
                 {/* <p className="main-overlay-text-static">Book Now!</p> */}
           </div></div>
@@ -83,7 +83,7 @@ function HomePage() {
           </a>
           <a href="/cancellation">
             <div class="image-container-static">
-            <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/277728832_3220118411646933_2693453111627552523_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=W5ciXzPpoiwAX985n6A&tn=RGR2Um_kH-gcyI2K&_nc_ht=scontent-ord5-2.xx&oh=00_AfCY9JX6RZdmy2Ng-pbQBaBQO2GexyVScPdVpKPBa7Y1oA&oe=63ECDA52" alt="4" />
+            <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/277728832_3220118411646933_2693453111627552523_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=XmDJkpPY2xgAX89pxQC&tn=qZC8PrD-8OvLrnOu&_nc_ht=scontent-ord5-2.xx&oh=00_AfCsc4B5mM4W4JNDOiu8XZfyr1eqpDyo_Z9wRHrzYmMt8A&oe=64029B12" alt="4" />
             <div class="text-overlay-static">
             </div>
           </div>
