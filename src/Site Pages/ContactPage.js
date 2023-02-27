@@ -1,6 +1,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faHouseChimney } from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faHouseChimney, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+
 
 const ContactPage = () => {
   const date = new Date();
@@ -11,7 +13,17 @@ const ContactPage = () => {
     <div>
       
         <h1>Contact Information</h1><div className="fade-in">
-          <div className="contact-page">
+          <div className="contact-page">        <div className="social-icons-contact-page">
+        <a href="https://www.facebook.com/katelynbirkyhairstylist" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faFacebook} size="2x"/>
+        </a>
+        <a href="https://www.instagram.com/katelynbirkyhairstylist/" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faInstagram} size="2x"/>
+        </a>
+        <a href="https://www.tiktok.com/@hairbykatelynbirky" target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faTiktok} size="2x"/>
+        </a>
+      </div>
         <div className="contact-info-container">
           <div className="contact-info-left">            
           <div className="contact-info-phone">
@@ -20,7 +32,18 @@ const ContactPage = () => {
             </div>
           <p>Phone: 219-508-4730</p>
           </div>
+
+<div className="contact-info-email">
+  <div className="email-icon">
+    <FontAwesomeIcon icon={faEnvelope} />
+  </div>
+  <div className="email-link">
+  <a href="mailto:hairstylistkatelynbirky@gmail.com">hairstylistkatelynbirky@gmail.com</a></div>
+</div>
+
+          
           <div className="address-container">
+            
             <div className="address-icon">
               <FontAwesomeIcon icon={faHouseChimney} />
             </div>
@@ -30,12 +53,12 @@ const ContactPage = () => {
                 Suite 206<br />
                 Valparaiso, IN 46385, US
               </p>
-            </div>            
+            </div><a href="https://goo.gl/maps/4Uw9kLK5MGKsfb3E7" target="_blank" rel="noopener noreferrer">            
             <div className="map-box">
             <img src="https://api.mapbox.com/styles/v1/square/ck7qg6b2d0gpv1io8svbpvvf9/static/url-https%3A%2F%2Fappointments-production-f.squarecdn.com%2Fappointments%2Fassets%2Fobs%2Flocation-pin-231adca80350d470f43706a9ad37c7aa371bc7b6b0aa0207d9c612d8ccf52a13.png(-87.04006,41.504099)/-87.04006,41.504099,16/400x280?access_token=pk.eyJ1Ijoic3F1YXJlIiwiYSI6ImNpZmE4NnNlbTIwN3FyeWx4bm14MmV6YXQifQ.aZ4Qok0y0R4hyNzRi_qU7A" class="img-desktop display-desktop"/>
-</div>
-          </div>
+</div></a>
 
+          </div>
 
           <div className="contact-info-right">
             <p className="contact-info-business-hours">Business Hours:</p>
@@ -73,6 +96,7 @@ const ContactPage = () => {
             </table>
           </div>
         </div>
+
         <p className="contact-info-footer">For any questions or concerns, please don't hesitate to reach out!</p>
       </div>
     </div></div>

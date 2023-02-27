@@ -257,7 +257,6 @@ nav {
 
 .contact-info-container {
   display: flex;
-  /* flex-direction: row; */
 }
 
 .contact-info-left {
@@ -270,6 +269,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  padding-top: 1em;
 }
 
 .contact-info-right {
@@ -292,8 +292,20 @@ nav {
   position: relative;
   justify-content: center;
   text-align: center;
+  /* padding-top: 1em; */
+  padding-bottom: .5em;
+}
+
+.contact-info-email {
+  position: relative;
+  justify-content: center;
+  text-align: center;
   padding-top: 1em;
   padding-bottom: .5em;
+}
+
+.email-link {
+  padding: .5em;
 }
 
 .phone-icon {
@@ -322,7 +334,7 @@ nav {
   padding-top: 1em;
   font-weight: bold;
   margin: 0.20em 0;
-  margin-top: 2em;
+  margin-top: 4em;
 }
 
 .business-hours {
@@ -391,7 +403,7 @@ nav {
   position: relative;
   justify-content: center;
   text-align: center;
-  padding-top: 1em;
+  padding-top: 3em;
   padding-bottom: 2em;
   font-weight: bold;
   padding-left: 1em;
@@ -411,6 +423,17 @@ nav {
     width: 100%;
     text-align: left;
   }
+}
+
+.social-icons-contact-page {
+  justify-content: center;
+  text-align: center;
+  padding-top: 2em;
+  /* padding-bottom: .5em; */
+}
+
+.social-icons-contact-page a:not(:last-child) {
+  margin-right: 2em;
 }
 
 
@@ -762,6 +785,8 @@ th {
 
 
 
+
+
 /* Booking Page */
 
 .booking-details {
@@ -793,12 +818,29 @@ th {
   font-weight: bold;
 }
 
-/* .cancel-policy-text a {
-  color: #333;
-  background: #f2f2f2f5;
-} */
-
 .cancel-policy-text:hover {
   background: #333;
   color: #f2f2f2f5;
 }
+
+.book-online-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  line-height: 2em;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.book-online-link p {
+  padding: .5em;
+  font-size: 2em;
+}
+
+.book-online-text:hover {
+  background: #333;
+  color: #f2f2f2f5;
+}
+
