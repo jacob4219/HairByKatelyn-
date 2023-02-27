@@ -245,16 +245,6 @@ nav {
   padding-left: 2em;
 }
 
-.link-text p{
-  color: #ff0606db;
-  width: 100%;
-}
-
-.link-text p:hover {
-  color: white;
-  background-color: #333;
-}
-
 
 
 
@@ -267,12 +257,19 @@ nav {
 
 .contact-info-container {
   display: flex;
+  /* flex-direction: row; */
 }
 
 .contact-info-left {
   width: 50%;
-  display: relative;
   
+}
+
+.address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .contact-info-right {
@@ -291,15 +288,41 @@ nav {
   margin: 0.20em 0;
 }
 
-.contact-info1 {
+.contact-info-phone {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: .5em;
+}
+
+.phone-icon {
+  padding-bottom: .5em;
+  padding-top: 3em;
+}
+
+.contact-info-address {
   font-size: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   background-color: #f2f2f2f5;
-  padding: 1em;
+  padding-bottom: 1em;
   margin: 0.20em 0;
+}
+
+.contact-info-business-hours {
+  font-size: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #f2f2f2f5;
+  padding-top: 1em;
+  font-weight: bold;
+  margin: 0.20em 0;
+  margin-top: 2em;
 }
 
 .business-hours {
@@ -311,7 +334,7 @@ nav {
   margin: 0.20em 0;
   background-color: #f2f2f2f5;
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .business-hours td,
@@ -341,16 +364,55 @@ nav {
   text-align: center;
 }
 
-.left-address {
+.address-icon {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding-top: 1em;
+  padding-bottom: .5em;
 }
 
 .current-day td {
   background-color: #333;
   color: white;
   }
+
+.map-box {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 1em;
+  overflow: hidden;
+}
+
+.contact-info-footer {
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-weight: bold;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+@media only screen and (max-width: 767px) {
+  .contact-info-container {
+    flex-direction: column;
+  }
+  
+  .contact-info-left {
+    width: 100%;
+  }
+
+  .contact-info-right {
+    width: 100%;
+    text-align: left;
+  }
+}
+
 
 
 
@@ -605,6 +667,7 @@ nav {
     text-decoration: none;
     align-items: center;
     cursor: pointer;
+    font-weight: bold;
   }
 
   .portfolio-menu-item:hover {
@@ -626,15 +689,116 @@ nav {
   }
 }
 
+.selected-category-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.selected-category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: .5em;
+  font-weight: bold;
+  font-size: 2em;
+  letter-spacing: .1em;
+  background-color: #333333d2;
+  Color:#f2f2f2f5;
+  padding: .75em;
+  font-family: 'Pacifico';
+  width: 95%;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
 
-
-  /* .insta-feed {
+  .insta-feed {
     margin: 0 auto;
     margin-top: 2em;
   }
  .portfolio-feed-container {
-    padding-top: 1em;
-    height: 100%;
+    padding-top: 3em;
+    height: auto;
     width: 100%;
     overflow: hidden;
-  } */
+  }
+
+
+
+
+
+/* Services Page */
+
+table {
+  margin: 0 auto;
+  width: 80%;
+  text-align: left;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+th {
+  background-color: lightgray;
+}
+
+.services-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.services-table {
+  color: #333;
+  background-color: #f2f2f2f5;
+  padding-bottom: 3em;
+}
+
+
+
+/* Booking Page */
+
+.booking-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+  color: #333;
+  background-color: #f2f2f2f5;
+  padding-bottom: 3em;
+  line-height: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.link-text p{
+  color: #333;
+  padding: .5em;
+  text-decoration: underline;
+}
+
+.cancel-policy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  line-height: .5em;
+  font-weight: bold;
+}
+
+/* .cancel-policy-text a {
+  color: #333;
+  background: #f2f2f2f5;
+} */
+
+.cancel-policy-text:hover {
+  background: #333;
+  color: #f2f2f2f5;
+}

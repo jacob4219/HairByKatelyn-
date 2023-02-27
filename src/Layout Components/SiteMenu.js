@@ -27,12 +27,13 @@ const SiteMenu = () => {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <Link to="/home" onClick={() => setExpanded(false)}>Home</Link>
-              <Link to="/portfolio" onClick={() => setExpanded(false)}>Portfolio</Link>
-              <Link to="/services" onClick={() => setExpanded(false)}>Services</Link>
               <Link to="/book" onClick={() => setExpanded(false)}>Book</Link>
-              <Link to="/promotions" onClick={() => setExpanded(false)}>Promotions</Link>
+              <Link to="/services" onClick={() => setExpanded(false)}>Services</Link>
+              
+              <Link to="/portfolio" onClick={() => setExpanded(false)}>Portfolio</Link>
+              {/* <Link to="/promotions" onClick={() => setExpanded(false)}>Promotions</Link> */}
               <Link to="/contact" onClick={() => setExpanded(false)}>Contact</Link>
-              <Link to="/store" onClick={() => setExpanded(false)}>Store</Link>
+              {/* <Link to="/store" onClick={() => setExpanded(false)}>Store</Link> */}
               <Link to="/cancellation" onClick={() => setExpanded(false)}>Cancellation</Link>
             </Nav>
             <div className="social-icons-desktop">

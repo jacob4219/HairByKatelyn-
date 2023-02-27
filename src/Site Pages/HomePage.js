@@ -7,11 +7,12 @@ import { Autoplay, Pagination, Navigation } from "swiper";
 
 function HomePage() {
   return (
-    <div className="fade-in">
-      <div className="home-page">
+    <div>
+    
+      
 
-      <h1>Home</h1>
-
+      <h1>Home</h1><div className="fade-in">
+<div className="home-page">
         
         <Swiper
         loop={true}
@@ -92,7 +93,7 @@ function HomePage() {
         
       </div>
       
-    </div>
+    </div></div>
   );
 }
 

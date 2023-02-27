@@ -2,9 +2,9 @@ import React from 'react';
 
 const CancellationPolicy = () => {
 return (
-    <div className="fade-in">
+    
 <div>
-<h1>Cancellation Policy</h1>
+<h1>Cancellation Policy</h1><div className="fade-in">
 <ul className="cancellation-policy">
 <li>A valid credit card is required to be kept on file for all appointments.</li>
 <li>A 48-hour notice is required for cancellations.</li>
