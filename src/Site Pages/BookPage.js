@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BookPage = () => {
   return (
@@ -16,10 +17,10 @@ const BookPage = () => {
       <div className="cancel-policy">
       <p>Please View My</p>
       <div class="link-text">
-      <a href="/cancellation">
+      <Link to="/cancellation">
         
       <p className="cancel-policy-text">Cancellation Policy</p>
-      </a>
+      </Link>
       </div>
       </div>
       </div>
