@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -58,14 +59,16 @@ function HomePage() {
         </Swiper>
 
         <div className="static-images">
-        <a href={process.env.PUBLIC_URL + "/services"}>
-
+          <Link to="/services">
+        {/* <a href={process.env.PUBLIC_URL + "/services"}> */}
             <div class="image-container-static">
             <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/312951748_535731411893500_7092277791842944265_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=730e14&_nc_ohc=iPoz_NjgtpkAX83GK0H&_nc_ht=scontent-ord5-2.xx&oh=00_AfDIiFSDdCOY1JsVxNXJ798_CiYuaJKV3I7LEt2oxBcajw&oe=6400FDB4" alt="1" />
               <div class="text-overlay-static">
                 {/* <p className="main-overlay-text-static">Book Now!</p> */}
-          </div></div>
-          </a>
+          </div></div></Link>
+          {/* </a> */}
+
+
           <a href={process.env.PUBLIC_URL + "/book"}>
             <div class="image-container-static">
             <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t1.6435-9/165525082_2939725103019600_6506360652530317141_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=a26aad&_nc_ohc=YdPDCWAzjtIAX94Dfa_&_nc_ht=scontent-ord5-2.xx&oh=00_AfDqLOe5D7CFnrCQyc6-QpOxxfDw3vFhNiWMU4sGrBpFPA&oe=640E9F49" alt="2" />
@@ -74,6 +77,8 @@ function HomePage() {
           </div>
           </div>
           </a>
+
+
           <a href={process.env.PUBLIC_URL + "/store"}>
             <div class="image-container-static">
             <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t1.6435-9/90905765_2620125341646246_638114677125021696_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=9267fe&_nc_ohc=fEUlK7mSlBIAX-0NY0c&_nc_ht=scontent-ord5-2.xx&oh=00_AfCF5a9yb9nX98aJYJuGhL-Tx-RQ344PS-_cMzVSbhO7eg&oe=640E9278" alt="3" />
@@ -82,6 +87,8 @@ function HomePage() {
             </div>
           </div>
           </a>
+
+
           <a href={process.env.PUBLIC_URL + "/cancellation"}>
             <div class="image-container-static">
             <img src="https://scontent-ord5-2.xx.fbcdn.net/v/t39.30808-6/277728832_3220118411646933_2693453111627552523_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=a26aad&_nc_ohc=XmDJkpPY2xgAX89pxQC&tn=qZC8PrD-8OvLrnOu&_nc_ht=scontent-ord5-2.xx&oh=00_AfCsc4B5mM4W4JNDOiu8XZfyr1eqpDyo_Z9wRHrzYmMt8A&oe=64029B12" alt="4" />
