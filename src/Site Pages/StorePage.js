@@ -19,6 +19,7 @@ const StorePage = () => {
                     </div>
                 </a>
             </div>
+            {/* <iframe src="https://square.site/book/VZV0FJCBC1YS4/hair-by-katelyn-birky-valparaiso-in"></iframe> */}
         </div>
     );
 };

@@ -824,6 +824,7 @@ th {
 .cancel-policy-text:hover {
   background: #333;
   color: #f2f2f2f5;
+  text-decoration: none;
 }
 
 .book-online-link {
@@ -837,6 +838,18 @@ th {
   text-decoration: underline;
 }
 
+.contact-online-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+  font-weight: bold;
+  text-decoration: underline;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .book-online-link p {
   padding: .5em;
   font-size: 2em;
@@ -847,3 +860,23 @@ th {
   color: #f2f2f2f5;
 }
 
+.contact-online-text:hover {
+  background: #333;
+  color: #f2f2f2f5;
+  padding-left: 1em;
+  padding-right: 1em;
+  /* text-decoration: none; */
+}
+
+.contact-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  color: #f2f2f2f5;
+  background: #333;
+  text-decoration: none;
+  /* padding-left: .5em; */
+  /* padding-right: .5em; */
+}

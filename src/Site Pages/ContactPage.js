@@ -30,7 +30,7 @@ const ContactPage = () => {
             <div className="phone-icon">
             <FontAwesomeIcon icon={faPhone} />
             </div>
-          <p>Phone: 219-508-4730</p>
+          <p> <a href="tel:+12195084730">Phone: 219-508-4730</a></p>
           </div>
 
 <div className="contact-info-email">
